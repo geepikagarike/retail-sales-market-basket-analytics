@@ -1,0 +1,30 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Credentials and local secret/config files
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+
+# Source datasets and generated data
+/Online_Retail.csv/
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
+
+# BI workbooks/extracts may embed large or sensitive data
+*.pbix
+*.pbit
+*.twbx
+*.hyper
